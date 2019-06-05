@@ -18,8 +18,8 @@ public class App {
 
 
         EmbeddedMysql mysqld = anEmbeddedMysql(config)
-                .addSchema("inno", classPathScript("db/innodb.sql"))
-//                .addSchema("myisam", classPathScript("db/myisam.sql"))
+//                .addSchema("inno", classPathScript("db/innodb.sql"))
+                .addSchema("myisam", classPathScript("db/myisam.sql"))
 //                .addSchema("deInno", classPathScript("db/deno_innodb.sql"))
 //                .addSchema("deMyisam", classPathScript("db/deno_myisam.sql"))
                 .start();
